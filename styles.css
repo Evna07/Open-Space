@@ -1,0 +1,131 @@
+body{
+    background-color: black;
+}
+
+.space {
+    background: url("space.png");
+    width: 80vw;
+    height: 100vh;
+    border-radius: 10px;
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.planet-area {
+    width: 50%;
+    height:80%
+}
+
+.planet {
+    position: absolute;
+    transform: scale(50%);
+    left: -226px;
+    bottom: -226px;
+    border-radius: 0 0 0 20px;
+}
+
+.rocket {
+    position: absolute;
+    transform: scale(30%) rotate(25deg);
+    top: -20px;
+    left: 60px;
+}
+
+.control-panel {
+    width: 35%;
+    height:45%;
+    border-radius: 15px;
+    background-color: #404040;
+    /*flex-direction: column;*/
+    background:
+            radial-gradient(hsl(0, 100%, 27%) 4%, hsl(0, 100%, 18%) 9%, hsla(0, 100%, 20%, 0) 9%) 0 0,
+            radial-gradient(hsl(0, 100%, 27%) 4%, hsl(0, 100%, 18%) 8%, hsla(0, 100%, 20%, 0) 10%) 50px 50px,
+            radial-gradient(hsla(0, 100%, 30%, 0.8) 20%, hsla(0, 100%, 20%, 0)) 50px 0,
+            radial-gradient(hsla(0, 100%, 30%, 0.8) 20%, hsla(0, 100%, 20%, 0)) 0 50px,
+            radial-gradient(hsla(0, 100%, 20%, 1) 35%, hsla(0, 100%, 20%, 0) 60%) 50px 0,
+            radial-gradient(hsla(0, 100%, 20%, 1) 35%, hsla(0, 100%, 20%, 0) 60%) 100px 50px,
+            radial-gradient(hsla(0, 100%, 15%, 0.7), hsla(0, 100%, 20%, 0)) 0 0,
+            radial-gradient(hsla(0, 100%, 15%, 0.7), hsla(0, 100%, 20%, 0)) 50px 50px,
+            linear-gradient(45deg, hsla(0, 100%, 20%, 0) 49%, hsla(0, 100%, 0%, 1) 50%, hsla(0, 100%, 20%, 0) 70%) 0 0,
+            linear-gradient(-45deg, hsla(0, 100%, 20%, 0) 49%, hsla(0, 100%, 0%, 1) 50%, hsla(0, 100%, 20%, 0) 70%) 0 0;
+    background-color: #300;
+    background-size: 100px 100px;
+}
+
+.control-panel__inner{
+    width: 94%;
+    height: 94%;
+    border-radius: 10px;
+    background-color: grey;
+    margin-left: 3%;
+    margin-top: 2.5%;
+}
+
+.passwordField {
+    border: 2px solid darkred;
+    background-color: transparent;
+    height: 3vh;
+    border-radius: 4px;
+    margin-top: 3%;
+    margin-left: 25%;
+    color: black;
+}
+
+.passwordButton {
+    width: 4vw;
+    height: 7%;
+    border-radius: 4px;
+    margin-top: 3%;
+    margin-left: 2%;
+    font-size: 110%;
+    background-color: darkred;
+    border: 2px solid darkred;
+    color: darkgray;
+    text-transform: uppercase;
+}
+
+.check-buttons {
+    width: 90%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 5%;
+}
+
+#check-button1, #check-button2, #check-button3, #check-button4, #check-button5, #check-button6 {
+    height: 5vh;
+    width: 5vh;
+}
+
+.levers {
+    width: 90%;
+    height: 12vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin: 5%;
+}
+
+#lever1, #lever2, #lever3, #lever4, #lever5 {
+    width: 5vw;
+    height: 12vh;
+    margin: 0;
+    transform: rotate(-90deg);
+}
+
+.submit {
+    font-size: 100%;
+    width: 20%;
+    height: 4vh;
+    margin-bottom: 15%;
+    margin-left: 40%;
+    background-color: darkred;
+    border: 2px solid darkred;
+    color: darkgray;
+    border-radius: 100%;
+    text-transform: uppercase;
+}
