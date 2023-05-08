@@ -36,7 +36,7 @@ body{
 
 .control-panel {
     width: 35%;
-    height:45%;
+    height:65%;
     border-radius: 15px;
     background-color: #404040;
     /*flex-direction: column;*/
@@ -53,6 +53,7 @@ body{
             linear-gradient(-45deg, hsla(0, 100%, 20%, 0) 49%, hsla(0, 100%, 0%, 1) 50%, hsla(0, 100%, 20%, 0) 70%) 0 0;
     background-color: #300;
     background-size: 100px 100px;
+  contain: paint;
 }
 
 .control-panel__inner{
@@ -62,6 +63,7 @@ body{
     background-color: grey;
     margin-left: 3%;
     margin-top: 2.5%;
+    contain: paint;
 }
 
 .passwordField {
@@ -103,7 +105,7 @@ body{
 
 .levers {
     width: 90%;
-    height: 12vh;
+    height: 18vh;
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
@@ -112,7 +114,7 @@ body{
 
 #lever1, #lever2, #lever3, #lever4, #lever5 {
     width: 5vw;
-    height: 12vh;
+    height: 18vh;
     margin: 0;
     transform: rotate(-90deg);
 }
@@ -126,6 +128,6 @@ body{
     background-color: darkred;
     border: 2px solid darkred;
     color: darkgray;
-    border-radius: 100%;
+    border-radius: 8px;
     text-transform: uppercase;
 }
